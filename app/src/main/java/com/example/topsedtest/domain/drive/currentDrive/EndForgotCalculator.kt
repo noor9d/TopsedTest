@@ -1,7 +1,7 @@
 package com.example.topsedtest.domain.drive.currentDrive
 
 import com.example.topsedtest.domain.location.LocationPoint
-import com.example.topsedtest.utils.SphericalUtil
+import com.example.topsedtest.utils.SphericalUtil2
 import com.example.topsedtest.utils.toLatLng
 import org.koin.core.context.GlobalContext
 import java.util.concurrent.TimeUnit
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 class EndForgotCalculator {
 
     private val sphericalUtil by lazy {
-        GlobalContext.get().get<SphericalUtil>()
+        GlobalContext.get().get<SphericalUtil2>()
     }
 
     private val locationPoints: MutableMap<Long, LocationPoint> =

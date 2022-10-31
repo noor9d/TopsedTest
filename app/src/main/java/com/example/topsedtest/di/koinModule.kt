@@ -21,7 +21,7 @@ import com.example.topsedtest.repositories.DriveRepository
 import com.example.topsedtest.ui.home.HomeViewModel
 import com.example.topsedtest.utils.ClockUtils
 import com.example.topsedtest.utils.ConversionUtil
-import com.example.topsedtest.utils.SphericalUtil
+import com.example.topsedtest.utils.SphericalUtil2
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -44,7 +44,7 @@ val koinModule = module {
 
     factory { ConversionUtil() }
 
-    factory { SphericalUtil() }
+    factory { SphericalUtil2() }
 
     factory { EndForgotCalculator() }
 

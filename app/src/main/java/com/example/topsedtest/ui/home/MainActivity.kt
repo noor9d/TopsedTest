@@ -18,7 +18,9 @@ import com.example.topsedtest.R
 import com.example.topsedtest.data.model.DashboardData
 import com.example.topsedtest.databinding.ActivityMainBinding
 import com.example.topsedtest.service.ActivityMessenger
-import com.example.topsedtest.utils.DriveAction.*
+import com.example.topsedtest.utils.DriveAction.PAUSE
+import com.example.topsedtest.utils.DriveAction.START
+import com.example.topsedtest.utils.DriveAction.STOP
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity(), ServiceConnection {

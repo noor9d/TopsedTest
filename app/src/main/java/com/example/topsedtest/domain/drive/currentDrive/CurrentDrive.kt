@@ -4,14 +4,14 @@ import com.bike.race.domain.drive.Drive
 import com.example.topsedtest.domain.drive.drivepath.DrivePathBuilder
 import com.bike.race.domain.drive.drivepath.DrivePathItem
 import com.example.topsedtest.domain.location.LocationPoint
-import com.example.topsedtest.utils.SphericalUtil
+import com.example.topsedtest.utils.SphericalUtil2
 import com.google.android.gms.maps.model.LatLng
 import org.koin.core.context.GlobalContext
 import java.util.concurrent.TimeUnit
 
 class CurrentDrive {
 
-    private val sphericalUtil: SphericalUtil by lazy {
+    private val sphericalUtil: SphericalUtil2 by lazy {
         GlobalContext.get().get()
     }
 

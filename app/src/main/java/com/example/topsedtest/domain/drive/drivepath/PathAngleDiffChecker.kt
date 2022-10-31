@@ -3,7 +3,7 @@ package com.example.topsedtest.domain.drive.drivepath
 import com.bike.race.domain.drive.drivepath.DrivePathItem
 import com.bike.race.domain.drive.drivepath.DrivePathItemBuilder
 import com.example.topsedtest.domain.location.LocationPoint
-import com.example.topsedtest.utils.SphericalUtil
+import com.example.topsedtest.utils.SphericalUtil2
 import com.google.android.gms.maps.model.LatLng
 import org.koin.core.context.GlobalContext
 import kotlin.math.abs
@@ -14,7 +14,7 @@ class PathAngleDiffChecker {
     private var prevPrevLocationPoint: DrivePathItem? = null
 
     private val sphericalUtil by lazy {
-        GlobalContext.get().get<SphericalUtil>()
+        GlobalContext.get().get<SphericalUtil2>()
     }
 
     fun addLocationPoint(locationPoint: LocationPoint, speed: Float, time: Long) {

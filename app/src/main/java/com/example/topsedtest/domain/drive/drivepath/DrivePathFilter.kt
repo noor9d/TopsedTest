@@ -4,7 +4,7 @@ import com.example.topsedtest.db.dbModels.DrivePathItemEntity
 import com.bike.race.domain.drive.drivepath.DrivePathItem
 import com.bike.race.domain.drive.drivepath.DrivePathItemBuilder
 import com.example.topsedtest.domain.location.LocationPoint
-import com.example.topsedtest.utils.SphericalUtil
+import com.example.topsedtest.utils.SphericalUtil2
 import com.google.android.gms.maps.model.LatLng
 import org.koin.core.context.GlobalContext
 
@@ -15,7 +15,7 @@ class DrivePathFilter {
     private var topSpeed: Float = 0f
 
     private val sphericalUtil by lazy {
-        GlobalContext.get().get<SphericalUtil>()
+        GlobalContext.get().get<SphericalUtil2>()
     }
 
     private val pathAngleDiffChecker by lazy {

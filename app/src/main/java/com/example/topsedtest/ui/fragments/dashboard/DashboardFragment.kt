@@ -17,7 +17,10 @@ import androidx.core.app.ActivityCompat
 import com.example.topsedtest.R
 import com.example.topsedtest.data.model.DashboardData
 import com.example.topsedtest.databinding.FragmentDashboardBinding
-import com.example.topsedtest.domain.drive.currentDrive.CurrentDriveStatus.*
+import com.example.topsedtest.domain.drive.currentDrive.CurrentDriveStatus.PAUSED
+import com.example.topsedtest.domain.drive.currentDrive.CurrentDriveStatus.STARTED
+import com.example.topsedtest.domain.drive.currentDrive.CurrentDriveStatus.STARTING
+import com.example.topsedtest.domain.drive.currentDrive.CurrentDriveStatus.STOPPED
 import com.example.topsedtest.ui.home.HomeViewModel
 import com.example.topsedtest.ui.permission.PermissionCheckActivity
 import com.example.topsedtest.utils.DialogUtils
