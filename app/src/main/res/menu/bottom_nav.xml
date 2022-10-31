@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:checked="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_speedometer"
+        android:title="@string/dashboard"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/digitalFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_digital"
+        android:title="@string/digital"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/mapFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map"
+        app:showAsAction="withText" />
+</menu>
